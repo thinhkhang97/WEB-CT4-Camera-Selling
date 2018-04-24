@@ -1,0 +1,64 @@
+.profile a{
+    width: 166px;
+    height: 25px;
+    display: block;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #dad0d0;
+    background-position: 5px 5px;
+    border-bottom: 1px #FFFFFF solid;
+    text-decoration: none;
+    color: #504b4b;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
+.profile a:hover {
+    background: no-repeat left #7bbcc7;
+    color: #FFFFFF;
+    background-position: 5px 5px;
+}
+.profile_active a{
+    width: 166px;
+    height: 25px;
+    display: block;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #dad0f3;
+    background-position: 5px 5px;
+    border-bottom: 1px #FFFFFF solid;
+    text-decoration: none;
+    color: #504b4b;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
+.account-profile {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 30px 30px 20px 40px!important;
+    background: #fff;
+    border-radius: 4px;
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.label_form{
+    float: left;
+    width: 20%;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.birthday-picker select {
+    display: inline-block;
+    width: 30%;
+}
+.center_prod_box {
+    width: 173px;
+    height: auto;
+    background: url(images/product_box_center.gif) repeat-y;
+    float: left;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
