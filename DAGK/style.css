@@ -319,6 +319,7 @@ font-weight:bold;
 color:#064E5A;
 }
 .product_img{
+   
 padding:5px 0 5px 0;
 }
 .prod_price{
@@ -380,8 +381,10 @@ background:url(images/bar_bg.gif) no-repeat center;
 /*----------------------right content--------------*/
 .right_content{
 width:196px;
-float:left;
+float:left; 
+
 padding:5px 0 0 0;
+
 }
 .shopping_cart{
 width:195px;
