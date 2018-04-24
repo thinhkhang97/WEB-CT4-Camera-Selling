@@ -319,8 +319,10 @@ font-weight:bold;
 color:#064E5A;
 }
 .product_img{
-   
 padding:5px 0 5px 0;
+}
+.product_img img{
+	width: 92px;
 }
 .prod_price{
 padding:5px 0 5px 0;
