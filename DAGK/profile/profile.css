@@ -23,7 +23,7 @@
     display: block;
     background-position: left;
     background-repeat: no-repeat;
-    background-color: #dad0f3;
+    background-color: #DAD08A;
     background-position: 5px 5px;
     border-bottom: 1px #FFFFFF solid;
     text-decoration: none;
@@ -35,13 +35,18 @@
     display: block;
     margin-bottom: 20px;
     width: 100%;
-    padding: 30px 30px 20px 40px!important;
+    padding: 10px 50px 10px 30px;
     background: #fff;
     border-radius: 4px;
+}
+.account-profile .form-group {
+    margin-bottom: 20px;
+    position: relative;
 }
 label {
     display: inline-block;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 .label_form{
     float: left;
@@ -49,16 +54,27 @@ label {
     font-size: 13px;
     margin-bottom: 0;
 }
+.input-wrap{
+    float: left;
+    width: 380px;
+    margin: 0;
+}
+.input-wrap .btn-send-otp {
+    border-radius: 0 3px 3px 0;
+    color: #4a4a4a;
+    font-size: 13px;
+    background-color: #fdd835;
+    display: inline-block;
+    width: 161px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 500;
+}
+.password-group {
+    display: none;
+}
 .birthday-picker select {
     display: inline-block;
     width: 30%;
-}
-.center_prod_box {
-    width: 173px;
-    height: auto;
-    background: url(images/product_box_center.gif) repeat-y;
-    float: left;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
 }
