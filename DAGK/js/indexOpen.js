@@ -24,6 +24,7 @@ var cam3 = {
 var arr = [cam1, cam2, cam3];
 var loop = setInterval(SetHeaderImg, 1500);
 var atImg = 0;
+
 function SetHeaderImg () {
 	var image = document.getElementsByName('header-img');
 	var offer_title = document.getElementsByClassName('oferta_title');
@@ -33,3 +34,5 @@ function SetHeaderImg () {
 	oferta_text[0].innerHTML = arr[atImg]["description"];
 	atImg = (atImg+1)%3;
 }
+
+
