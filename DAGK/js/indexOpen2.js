@@ -21,15 +21,17 @@ var cam3 = {
 	,price:290,
 	reduce:310
 }
-var arr = [cam1, cam2, cam3];
-var loop = setInterval(SetHeaderImg, 1500);
-var atImg = 0;
+
+var loop = setInterval(SetHeaderImg, 2500);
+var atImg2 = 1;
 function SetHeaderImg () {
-	var image = document.getElementsByName('header-img');
-	var offer_title = document.getElementsByClassName('oferta_title');
-	var oferta_text = document.getElementsByClassName('oferta_text');
-	image[0].src = arr[atImg]["url"];
-	offer_title[0].innerHTML = arr[atImg]["name"];
-	oferta_text[0].innerHTML = arr[atImg]["description"];
-	atImg = (atImg+1)%3;
+	var image = document.getElementsByName('new_product_img');
+	var reduce = document.getElementsByClassName('reduce');
+	var price = document.getElementsByClassName('price');
+	var title = document.getElementsByClassName('product_title');
+	image[0].src = arr[atImg2]["url"];
+	reduce[0].innerHTML = arr[atImg2]["reduce"];
+	price[0].innerHTML = arr[atImg2]["price"];
+	title[0].innerHTML = arr[atImg2]["name"];
+	atImg2 = (atImg2+1)%3;
 }
