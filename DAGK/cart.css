@@ -4,7 +4,7 @@
     padding: 0px;
     margin: 0px;
     border-radius: 5px solid #ddd;
-    background-color: #dad0d0;
+    background-color: #fff;
 }
 
 .cart_name {
@@ -34,8 +34,8 @@
 }
 
 .cart-item {
-    padding: 60px 20px;
-    margin-bottom: 2px;
+    padding: 50px 20px;
+    margin-bottom: 45px;
     border-color: purple;
 }
 
@@ -173,3 +173,15 @@ a:hover {
     border-color: #c2000c;
     width: 100%
 }
+.address-class{
+    font-size: 14px;
+    background-color: #fff;
+    padding: 12px 20px 15px 19px;
+}
+
+.address-edit{
+    margin-left: 50px;
+}
+.address-name, .address-info, .address-postcode, .address-phone{
+    margin-top: 5px;
+} 
