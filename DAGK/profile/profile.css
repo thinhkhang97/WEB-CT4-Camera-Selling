@@ -48,7 +48,7 @@ label {
     margin-bottom: 5px;
     margin-top: 10px;
 }
-.label_form{
+.label_form, .control-label{
     float: none;
     width: 20%;
     font-size: 13px;
@@ -103,4 +103,16 @@ input[placeholder] {
 fieldset, legend {
     padding: 0;
     border: 0;
+}
+.checkbox{
+    font-size: 13px;
+}
+.btn-update{
+    border-radius: 0 3px 3px 0;
+    border: none;
+    color: #4a4a4a;
+    font-size: 13px;
+    background-color: #fdd835;
+    display: inline-block;
+    line-height: 25px;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" type="text/css" href="profile.css">
     <link rel="stylesheet" type="text/css" href="order.css">
+    <link rel="stylesheet" type="text/css" href="../cart.css">
     <script type="text/javascript" src="../js/boxOver.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 </head>
@@ -81,49 +82,103 @@
             </div>
             <!-- end of left content -->
             <div class="content-right">
-                <h1 class="order-title">Đơn hàng của tôi</h1>
+                <h1 class="orderview-title">Chi tiết đơn hàng #000005 -<strong> Chưa giao hàng</strong>
+                <p class="date">Ngày đặt hàng: 10:15 26/04/2018</p></h1>
+                <div class="account-order-detail">
+                    <div class="address-1">
+                        <h3>Địa chỉ người nhận</h3>
+                        <div>
+                            <p class="name">Trần Nhật Hải</p>
+                            <p><span>Địa chỉ: </span>Ký túc xá khu B ĐHQG, Đông Hòa, Dĩ An, Bình Dương, Việt Nam</p>
+                            <p><span>Điện thoại: </span>01636663059</p>
+                        </div>
+                    </div>
+                    <div class="payment-1">
+                        <h3>Hình thức giao hàng</h3>
+                        <div>
+                            <p>Vận chuyển Tiết Kiệm</p>
+                            <p>50.000&nbsp;₫</p>
+                        </div>
+                    </div>
+                    <div class="payment-2">
+                        <h3>Hình thức thanh toán</h3>
+                        <div>
+                            <p>Thanh toán tiền mặt khi nhận hàng </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="order-board">
                     <table class="table-custom">
                         <thead>
                             <tr>
-                                <th style="width: 85px">Mã đơn hàng</th>
-                                <th style="width: 70px">Ngày mua</th>
                                 <th style="width: 450px">Sản phẩm</th>
-                                <th style="width: 75px">Tổng tiền</th>
-                                <th style="width: 100px">Trạng thái <br> đơn hàng</th>
+                                <th style="width: 85px">Giá</th>
+                                <th style="width: 70px">Số lượng</th>
+                                <th style="width: 75px">Giảm giá</th>
+                                <th style="width: 100px">Tạm tính</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><a href="orderview.html">000005</a></td>
-                                <td>26/04/2018</td>
-                                <td>Canon M6 và 1 sản phẩm khác</td>
-                                <td>32.150.000&nbsp;₫</td>
                                 <td>
-                                    <span class="order-status">Chưa giao hàng</span>
+                                    <a href="../details.html"><img src="../images/Mirr/Canon_m6.jpg" alt="" style="width: 100px; height: 80px; float: left;"></a>
+                                    <div class="info-item" style="padding-top: 2px; width: 214px;padding-left: 10px">
+                                        <p class="name">
+                                            <a href="../details.html">Máy ảnh Canon M6</a>
+                                        </p>
+                                        <p class="seller-by">
+                                            Cung cấp bởi <a href="../index.html" style="color: blue">Thế giới máy ảnh</a>
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>16.050.000&nbsp;₫</td>
+                                <td>1</td>
+                                <td>0&nbsp;₫</td>
+                                <td>
+                                    <span class="order-status">16.050.000&nbsp;₫</span>
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">000003</a></td>
-                                <td>01/04/2018</td>
-                                <td>Canon 77D</td>
-                                <td>21.290.000&nbsp;₫</td>
                                 <td>
-                                    <span class="order-status">Giao hàng thành công</span>
+                                    <a href="../details.html"><img src="../images/Mirr/Canon_m6.jpg" alt="" style="width: 100px; height: 80px; float: left;"></a>
+                                    <div class="info-item" style="padding-top: 2px; width: 214px;padding-left: 10px">
+                                        <p class="name">
+                                            <a href="../details.html">Máy ảnh Canon M6</a>
+                                        </p>
+                                        <p class="seller-by">
+                                            Cung cấp bởi <a href="../index.html" style="color: blue">Thế giới máy ảnh</a>
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>16.050.000&nbsp;₫</td>
+                                <td>1</td>
+                                <td>0&nbsp;₫</td>
+                                <td>
+                                    <span class="order-status">16.050.000&nbsp;₫</span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td><a href="#">000001</a></td>
-                                <td>20/03/2018</td>
-                                <td>Canon M6</td>
-                                <td>16.100.000&nbsp;₫</td>
-                                <td>
-                                    <span class="order-status">Giao hàng thành công</span>
-                                </td>
-                            </tr>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4">
+                                        <span>Tổng tạm tính</span>
+                                    </td>
+                                    <td>32.100.000&nbsp;₫</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        <span>Phí vận chuyển</span>
+                                    </td>
+                                    <td>50.000&nbsp;₫</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><span>Tổng cộng</span></td>
+                                    <td><span class="sum">32.150.000&nbsp;₫</span></td>
+                                </tr>
+                            </tfoot>
                         </tbody>
                     </table>
                 </div>
+                <button type="button" class="btn btn-update btn-success" style="width: 165px; height: 35px;margin-bottom: 10px" onclick="back()"> Quay lại quản lý đơn hàng</button>
             </div>
             <!-- end of right content -->
         </div>
@@ -139,6 +194,9 @@
         </div>
     </div>
     <script type="text/javascript">
+    function back() {
+        location.href = 'order.html';
+    }
     </script>
 </body>
 

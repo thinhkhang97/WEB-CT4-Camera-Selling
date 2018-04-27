@@ -31,13 +31,15 @@
             <div class="oferte_content">
                 <div class="top_divider"><img src="../images/header_divider.png" alt="" width="1" height="164" /></div>
                 <div class="oferta">
-                    <div class="oferta_content"> <img src="../images/laptop.png" width="94" height="92" alt="" border="0" class="oferta_img" />
-                        <div class="oferta_details">
-                            <div class="oferta_title">Samsung GX 2004 LM</div>
-                            <div class="oferta_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </div>
-                            <a href="../details.html" class="details">details</a> </div>
+                    <div class="oferta">
+                        <div class="oferta_content"> <img name="header-img" src="../images/Canon_m6.jpg" width="94" height="92" alt="" border="0" class="oferta_img" />
+                            <div class="oferta_details">
+                                <div class="oferta_title">Canon_m6</div>
+                                <div class="oferta_text"> The Canon EOS M6 is a compact 24MP APS-C mirrorless digital camera with twin dial controls and a touch screen interface. </div>
+                            </div>
+                            <a href="../details.html" class="details">details</a>
+                        </div>
                     </div>
-                    <div class="oferta_pagination"> <span class="current">1</span> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> </div>
                 </div>
                 <div class="top_divider"><img src="../images/header_divider.png" alt="" width="1" height="164" /></div>
             </div>
@@ -212,13 +214,13 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="input-wrap" style="margin-left: 20%">
+                            <div class="input-wrap" style="margin-left: 0">
                                 <label class="checkbox">
-                                    <input type="checkbox" id="change_pass" name="change_pass" value="checked">Đổi mật khẩu
+                                    <input type="checkbox" id="change_pass" name="change_pass" style="width: 15px" onclick="passCheck()" value="checked">Đổi mật khẩu
                                 </label>
                             </div>
                         </div>
-                        <div class="password-group">
+                        <div class="password-group" id="passgroup">
                             <div class="form-group">
                                 <label class="control-label" for="old_password">Mật khẩu cũ</label>
                                 <div class="input-wrap">
@@ -242,8 +244,8 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="input-wrap" style="margin-left: 20%">
-                                <button type="button" class="btn btn-update btn-success" style="width: 100px;" onclick="fillData()">Cập nhật</button>
+                            <div class="input-wrap" style="margin-left: 15%">
+                                <button type="button" class="btn btn-update btn-success" style="width: 88px;" onclick="fillData()">Cập nhật</button>
                             </div>
                         </div>
                     </form>
@@ -302,6 +304,14 @@
         if(document.getElementById("gender_male").getAttribute('checked') == true); */
 
         alert("Đã cập nhật");
+    }
+
+    function passCheck() {
+        var a = document.getElementById('change_pass');
+        if (a.checked == true)
+            document.getElementById('passgroup').setAttribute('style', 'display:block');
+        else
+            document.getElementById('passgroup').setAttribute('style', 'display:none');
     }
     </script>
 </body>
