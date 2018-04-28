@@ -80,13 +80,13 @@
               <div class="contact_form">
                 <div class="form_row">
                   <label class="contact"><strong>Tên người dùng:</strong></label>
-                  <input type="text" class="contact_input" />
+                  <input name="userName_inp" type="text" class="contact_input" />
                 </div>
                 <div class="form_row">
                   <label class="contact" ><strong>
                     Mật khẩu:
                   </strong></label>
-                  <input  class="contact_input" type="password"/>
+                  <input name="password_inp" class="contact_input" type="password"/>
                 </div>
                 <!-- <div class="form_row">
                   <label class="contact"><strong>Phone:</strong></label>
@@ -100,7 +100,7 @@
                   <label class="contact"><strong>Message:</strong></label>
                   <textarea class="contact_textarea" ></textarea>
                 </div> -->
-                <div class="form_row"> <a href="./admin/index.html" class="contact">Đăng nhập</a> </div>
+                <div class="form_row"> <a name="btn_signIn" onclick = "signInOnClick()" href="index_User.html" class="contact">Đăng nhập</a> </div>
               </div>
             </div>
             <div class="bottom_prod_box_big"></div>

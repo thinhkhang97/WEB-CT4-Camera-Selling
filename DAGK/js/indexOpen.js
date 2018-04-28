@@ -35,4 +35,15 @@ function SetHeaderImg () {
 	atImg = (atImg+1)%3;
 }
 
-
+function signInOnClick(){
+	var userName = document.getElementsByName('userName_inp')[0].value;
+	var password = document.getElementsByName('password_inp')[0].value;
+	if(userName == "admin" && password == "abc123456"){
+		 document.getElementsByName('btn_signIn')[0].href = "./admin/index.html";
+		 alert('Đăng nhập thành công tài khoản admin');
+	}
+	else{
+		document.getElementsByName('btn_signIn')[0].href = "index_User.html";
+		alert('Đăng nhập thành công');
+	}
+}
