@@ -1,149 +1,122 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Thế giới máy ảnh</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="../style.css" />
-        <link rel="stylesheet" type="text/css" href="profile.css">
-        <!--[if IE 6]>
-        <link rel="stylesheet" type="text/css" href="iecss.css" />
-        <![endif]-->
-        <script type="text/javascript" src="../js/boxOver.js"></script>
-        <!-- bootstrap -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="main_container">
-            <div class="top_bar">
-                <div class="top_search">
-                    <div class="search_text"><a href="#">Tìm kiếm nâng cao</a></div>
-                    <input type="text" class="search_input" name="search" />
-                    <a href="search.html">
+
+<head>
+    <title>Thế giới máy ảnh</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="stylesheet" type="text/css" href="order.css">
+    <link rel="stylesheet" type="text/css" href="address.css">
+    <script type="text/javascript" src="../js/boxOver.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main_container">
+        <div class="top_bar">
+            <div class="top_search">
+                <div class="search_text"><a href="#">Tìm kiếm nâng cao</a></div>
+                <input type="text" class="search_input" name="search" />
+                <a href="search.html">
                         <img src="images/search.gif" class="search_bt" alt="" />
                         
                     </a>
-                    
-                </div>
             </div>
-            <div id="header">
-                <div id="logo"> <a href="#"><img src="../images/logo.png" alt="" border="0" width="237" height="140" /></a> </div>
-                <div class="oferte_content">
-                    <div class="top_divider"><img src="../images/header_divider.png" alt="" width="1" height="164" /></div>
+        </div>
+        <div id="header">
+            <div id="logo"> <a href="#"><img src="../images/logo.png" alt="" border="0" width="237" height="140" /></a> </div>
+            <div class="oferte_content">
+                <div class="top_divider"><img src="../images/header_divider.png" alt="" width="1" height="164" /></div>
+                <div class="oferta">
                     <div class="oferta">
-                        <div class="oferta">
-                            <div class="oferta_content"> <img name="header-img" src="../images/Canon_m6.jpg" width="94" height="92" alt="" border="0" class="oferta_img" />
-                                <div class="oferta_details">
-                                    <div class="oferta_title">Canon_m6</div>
-                                    <div class="oferta_text"> Canon EOS M6 là một máy ảnh kỹ thuật số không gương lật 24MP APS-C nhỏ gọn với các nút điều khiển quay số kép và giao diện màn hình cảm ứng. </div>
-                                </div>
-                                <a href="details.html" class="details">Chi tiết</a>
+                        <div class="oferta_content"> <img name="header-img" src="../images/Canon_m6.jpg" width="94" height="92" alt="" border="0" class="oferta_img" />
+                            <div class="oferta_details">
+                                <div class="oferta_title">Canon_m6</div>
+                                <div class="oferta_text"> Canon EOS M6 là một máy ảnh kỹ thuật số không gương lật 24MP APS-C nhỏ gọn với các nút điều khiển quay số kép và giao diện màn hình cảm ứng. </div>
+                            </div>
+                            <a href="details.html" class="details">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_divider"><img src="../images/header_divider.png" alt="" width="1" height="164" /></div>
+            </div>
+            <!-- end of oferte_content-->
+        </div>
+        <div id="main_content">
+            <div id="menu_tab">
+                <div class="left_menu_corner"></div>
+                <ul class="menu">
+                    <li><a href="../index_User.html" class="nav1"> Trang chủ</a></li>
+                    <li class="divider"></li>
+                    <li><a href="../search_User.html" class="nav2">Tìm kiếm</a></li>
+                    <li class="divider"></li>
+                    <li><a href="profile.html" class="nav4">Tài khoản của tôi</a></li>
+                    <li class="divider"></li>
+                    <li><a href="../index.html" class="nav4">Đăng xuất</a></li>
+                    <li class="divider"></li>
+                </ul>
+                <div class="right_menu_corner"></div>
+            </div>
+            <!-- end of menu tab -->
+            <div class="left_content">
+                <div class="title_box">Quản lý tài khoản</div>
+                <ul class="left_menu">
+                    <li class="profile"><a href="profile.html"><span class="glyphicon-user" aria-hidden="true" style="color: red"></span>Thông tin tài khoản</a></li>
+                    <li class="profile_active"><a href="address.html"><span class="glyphicon-calendar" aria-hidden="true" style="color: red"></span>Sổ địa chỉ</a></li>
+                    <li class="profile"><a href="order.html"><span class="glyphicon-shopping-cart" aria-hidden="true" style="color: red"></span>Quản lý đơn hàng</a></li>
+                </ul>
+            </div>
+            <!-- end of left content -->
+            <div class="content-right">
+                <h1 class="order-title">Sổ địa chỉ</h1>
+                <div class="order-board">
+                    <div class="address-board" style="background-color:#dad0d0">
+                        <div class="panel panel-default item">
+                            <div class="panel-body">
+                                <p class="name">Trần Nhật Hải <span class="default">Địa chỉ mặc định</span>
+                                </p>
+                                <p class="address"><span>Địa chỉ:</span> Ký túc xá khu B ĐHQG, Phường Đông Hòa, Thị xã Dĩ An, Bình Dương, Việt Nam</p>
+                                <p class="phone"><span>Điện thoại:</span> 01636663059</p>
+                                <p class="action">
+                                    <a href="#">Chỉnh sửa</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default item">
+                            <div class="panel-body">
+                                <p class="name">Trần Nhật Hải </p>
+                                <p class="address"><span>Địa chỉ:</span> Ký túc xá khu B ĐHQG, Phường Đông Hòa, Thị xã Dĩ An, Bình Dương, Việt Nam</p>
+                                <p class="phone"><span>Điện thoại:</span> 01636663059</p>
+                                <p class="action">
+                                    <a href="#">Chỉnh sửa</a>
+                                    <a href="#">Xóa</a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="top_divider"><img src="../images/header_divider.png" alt="" width="1" height="164" /></div>
                 </div>
-                <!-- end of oferte_content-->
-            </div>
-            <div id="main_content">
-                <div id="menu_tab">
-                    <div class="left_menu_corner"></div>
-                    <ul class="menu">
-                        <li><a href="../index_User.html" class="nav1"> Trang chủ</a></li>
-                        <li class="divider"></li>
-                        <li><a href="../search_User.html" class="nav2">Tìm kiếm</a></li>
-                        <li class="divider"></li>
-                        <li><a href="profile.html" class="nav4">Tài khoản của tôi</a></li>
-                        <li class="divider"></li>
-                        <li><a href="../index.html" class="nav4">Đăng xuất</a></li>
-                        <li class="divider"></li>
-                    </ul>
-                    <div class="right_menu_corner"></div>
-                </div>
-                <!-- end of menu tab -->
-                <div class="left_content">
-                    <div class="title_box">Quản lý tài khoản</div>
-                    <ul class="left_menu">
-                        <li class="profile_active"><a href="#"><span class="glyphicon-user" aria-hidden="true" style="color: red"></span>Thông tin tài khoản</a></li>
-                        <li class="profile"><a href="address.html"><span class="glyphicon-calendar" aria-hidden="true" style="color: red"></span>Sổ địa chỉ</a></li>
-                        <li class="profile"><a href="#"><span class="glyphicon-calendar" aria-hidden="true" style="color: red"></span>Tùy chọn thanh toán</a></li>
-                        <li class="profile"><a href="order.html"><span class="glyphicon-shopping-cart" aria-hidden="true" style="color: red"></span>Quản lý đơn hàng</a></li>
-                    </ul>
-                </div>
-                <!-- end of left content -->
-                <div class="center_content">
-                    <div class="center_title_bar">Quản lý sổ địa chỉ</div>
-                <div class="">
-                    <table>
-                        <caption>table title and/or explanatory text</caption>
-                        <thead>
-                            <tr>
-                                <th>header</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>data</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                </div>
-                <!-- end of center content -->
-                <div class="right_content">
-                    <div class="shopping_cart">
-                        <div class="cart_title">Giỏ hàng</div>
-                        <div class="cart_details"> 3 sản phẩm <br />
-                            <br />
-                            <span class="border_cart"></span> Total: <span class="price">3500000 VND</span> </div>
-                            <div class="cart_icon"><a href="cart.html" title="Checkout"><img src="images/shoppingcart.png" alt="" width="48" height="48" border="0" /></a></div>
-                        </div>
-                        <div class="title_box">Có gì mới?</div>
-                        <div class="border_box">
-                            <div class="product_title"><a href="details.html">Canon mới</a></div>
-                            <div class="product_img"><a href="details.html"><img name="new_cam_img" src="../images/p2.jpg" alt="" border="0" /></a></div>
-                            <div class="prod_price"><span class="reduce">3500000 VND</span> <span class="price">2700000 VND</span></div>
-                        </div>
-                        <div class="title_box">Nhà sản xuất</div>
-                        <ul class="left_menu">
-                            <li class="odd"><a href="../Sony_User.html">Cannon</a></li>
-                            <li class="even"><a href="../Sony_User.html">Sony</a></li>
-                            <li class="odd"><a href="../Sony_User.html">Nikkon</a></li>
-                            <li class="even"><a href="../Sony_User.html">Fujifilm</a></li>
-                        </ul>
-                        <div class="banner_adds"> <a href="#"><img src="images/bann1.jpg" alt="" border="0" /></a> </div>
-                    </div>
-                    <!-- end of right content -->
-                </div>
-                <!-- end of main content -->
-                <div class="footer">
-                    <div class="left_footer"> <img src="images/footer_logo.png" alt="" width="170" height="49" /> </div>
-                    <div class="center_footer"> Template name. All Rights Reserved 2008
-                        <br />
-                        <a href="http://csscreme.com"><img src="images/csscreme.jpg" alt="csscreme" border="0" /></a>
-                        <br />
-                    <img src="images/payment.gif" alt="" /> </div>
-                    <div class="right_footer"> <a href="#">home</a> <a href="#">about</a> <a href="#">sitemap</a> <a href="#">rss</a> <a href="contact.html">contact us</a> </div>
+                <div class="add_address">
+                    <button type="button" class="btn btn-update btn-success" style="width: 200px; height: 35px;margin-bottom: 10px; margin-left: 15px; margin-top: 10px">Thêm mới địa chỉ</button>
                 </div>
             </div>
-            <script type="text/javascript">
-            function fillData() {
-            var name = document.getElementById("name").value;
-            document.getElementById("name").setAttribute('value', name);
-            var sdt = document.getElementById("phone_number").value;
-            document.getElementById("phone_number").setAttribute('value', sdt);
-            var email = document.getElementById("email").value;
-            document.getElementById("email").setAttribute('value', email);
-            /*var gtinh = document.getElementByName("gender").value;
-            if(document.getElementById("gender_male").getAttribute('checked') == true); */
-            alert("Đã cập nhật");
-            }
-            function passCheck() {
-            var a = document.getElementById('change_pass');
-            if (a.checked == true)
-            document.getElementById('passgroup').setAttribute('style', 'display:block');
-            else
-            document.getElementById('passgroup').setAttribute('style', 'display:none');
-            }
-            </script>
-        </body>
-    </html>
+            <!-- end of right content -->
+        </div>
+        <!-- end of main content -->
+        <div class="footer">
+            <div class="left_footer"> <img src="../images/footer_logo.png" alt="" width="170" height="49" /> </div>
+            <div class="center_footer"> Bản quyền năm 2018
+                <br />
+                <a href="http://csscreme.com"><img src="../images/csscreme.jpg" alt="csscreme" border="0" /></a>
+                <br />
+                <a href="http://csscreme.com"><img src="../images/csscreme.jpg" alt="csscreme" border="0" /></a>
+                <br />
+                <img src="../images/payment.gif" alt="" /> </div>
+            <div class="right_footer"> <a href="#">Trang chủ</a> <a href="#">Về chúng tôi</a> <a href="#">sitemap</a> <a href="#">rss</a> <a href="../contact.html">Liên hệ chúng tôi</a> </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
